@@ -2,15 +2,15 @@
 <html>
     <head>
       <meta charset="UTF-8" />
-      <link rel="stylesheet" href="styles.css" />
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis">
+      <link rel="stylesheet" href="style.css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100|Roboto:100" rel="stylesheet">
         <title>Maquette-2</title>
     </head>
     <body>
        <main>
 
          <header>
-           <img class="ImageBackgroundHeader"src="./img/image-499666622.jpg">
+           <!--<img class="ImageBackgroundHeader"src="./img/image-499666622.jpg">-->
            <img class="ImageLogo"src="./img/logo.png">
              <nav class="navHeader">
                <ul>
@@ -19,10 +19,10 @@
                  <li><a>Testimonials</a></li>
                  <li><a>Team</a></li>
                  <li><a>Contact</a></li>
-                 <li><a>Archives</a></li>
+                 <li><a>Archives ⌵</a></li>
                </ul>
               </nav>
-            <h1>A Flexible one page portfolio theme,</br> for a full on user experience.</h1>
+            <p class=Title>A Flexible one page portfolio theme,</br> for a full on user experience.</p>
 
             <h3>We implement Awesome ideas into full-scale Projects.</h3>
 
@@ -34,50 +34,75 @@
 
            <article>
 
+             <div class="SubTitle">
              <h2>Fine Features</h2>
+             <div class="Line">
+             <hr></div></div>
 
-               <div>
-                 <img class="ImageIcon"src="./img/icon1.png">
-                 <img class="ImageIcon"src="./img/icon2.png">
-                 <img class="ImageIcon"src="./img/icon3.png">
-                 <img class="ImageIcon"src="./img/icon4.png">
+               <div class="GroupIcon">
+                 <div class="Icon">
+                   <img class="ImageIcon"src="./img/icon1.png">
+                 </div>
+                 <div class="TextIcon">
+                   <h4>Finest Pixel Quality</h4>
+                   <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+                 </div>
+
+                 <div class="Icon">
+                   <img class="ImageIcon"src="./img/icon2.png">
+                 </div>
+                 <div class="TextIcon">
+                   <h4>Themed to be elegant</h4>
+                   <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+                 </div>
                </div>
 
-             <h4>Finest Pixel Quality</h4>
-               <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+               <div class="GroupIcon">
+                 <div class="Icon">
+                   <img class="ImageIcon"src="./img/icon4.png">
+                 </div>
+                 <div class="TextIcon">
+                   <h4>Lovingly Coded</h4>
+                   <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+                 </div>
 
-             <h4>Themed to be elegant</h4>
-               <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+                 <div class="Icon">
+                   <img id="ToBig"class="ImageIcon"src="./img/icon3.png">
+                 </div>
+                 <div class="TextIcon">
+                   <h4>All Responsive!</h4>
+                   <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+                 </div>
 
-             <h4>All Responsive!</h4>
-               <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
-
-             <h4>Lovingly Coded</h4>
-               <p>Meth is a simple blogging theme from</br>your friends at Codestag.</p>
+               </div>
 
            </article>
 
            <article>
 
+             <div class="SubTitle">
              <h2>Our design samples</h2>
+             <div class="Line">
+             <hr></div></div>
 
-             <nav>
+             <nav class="NavDesign">
                <ul>
                  <li><a>All</a></li>
                  <li><a>Design</a></li>
+                 <li><a>Illustration</a></li>
                  <li><a>Logo Design</a></li>
                  <li><a>Typography</a></li>
                </ul>
              </nav>
 
              <div>
-               <div class="subGroup1">
+               <div class="ImageGroup">
                  <img class="ImageContent"src="./img/imaginario.jpg">
                  <img class="ImageContent"src="./img/portfolio_1.jpg">
                  <img class="ImageContent"src="./img/portfolio_2.jpg">
-               </div>
+              </div>
 
-               <div class="subGroup2">
+               <div class="ImageGroup">
                  <img class="ImageContent"src="./img/portfolio3-300x300.jpg">
                  <img class="ImageContent"src="./img/portfolio_4.jpg">
                  <img class="ImageContent"src="./img/portfolio5.jpg">
@@ -88,14 +113,18 @@
 
          </section>
 
-         <section>
+         <section class="Comment">
 
-           <div class="Comment">
-             <div class="Comment1">
-               <p>Honestly, these guys are the best people around to work with. They are super commited, delivering excepetional work always.</p>
+           <div>
+             <div class="CommentContent">
+               <p class="CommentText">Honestly, these guys are the best people around to work with. They are </br>super commited, delivering excepetional work always.</p>
                </br>
-               <p>Stephanie Windmill</p>
+               <p class="Signature">Stephanie Windmill</p>
              </div>
+             <span class=GroupButtonLeftRight>
+              <button class="ButtonLeftRight"type="button"><</button>
+              <button class="ButtonLeftRight"type="button">></button>
+            </span>
            </div>
 
          </section>
@@ -149,7 +178,10 @@
 
          <section>
 
+           <div class="SubTitle">
            <h2>Get in Touch</h2>
+           <div class="Line">
+           <hr></div></div>
 
            <div>
            <h5>Meth Design Studio</h5>
@@ -161,7 +193,7 @@
 
            <div>
            <h5>Send us a direct message</h5>
-             <form id="previewform" action="">
+             <form id="ContactForm" action="">
                <input class="field"type="Name"></br>Your Name</input></br>
                <input class="field"type="Email"></br>Your Email</input></br>
                <input class="field"type="Message"></br>Enter your message here</input></br>
@@ -173,20 +205,23 @@
 
          <section>
 
-           <h2>Get in Touch</h2>
+           <div class="SubTitle">
+           <h2>From Our Blog</h2>
+           <div class="Line">
+           <hr></div></div>
 
            <div class="links">
-             <div class="links1">
+             <div class="link1">
                <p>Markup: HTML Tags</br>and Formatting</p>
                <p>04 February 2014</p>
              </div>
 
-             <div class="links2">
+             <div class="link2">
                <p>The day we won our</br>first award</p>
                <p>24 January 2014</p>
              </div>
 
-             <div class="links3">
+             <div class="link3">
                <p>Why working from</br>home can be bad</p>
                <p>24 January 2014</p>
              </div>
