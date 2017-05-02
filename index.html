@@ -2,11 +2,12 @@
 <html>
     <head>
       <meta charset="UTF-8" />
-      <link rel="stylesheet" href="style.css" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100|Roboto:100" rel="stylesheet">
+      <link rel="stylesheet"href="style.css" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100|Roboto:100"rel="stylesheet">
         <title>Maquette-2</title>
     </head>
     <body>
+
        <main>
 
          <header>
@@ -193,11 +194,20 @@
 
            <div>
            <h5>Send us a direct message</h5>
-             <form id="ContactForm" action="">
-               <input class="field"type="Name"></br>Your Name</input></br>
-               <input class="field"type="Email"></br>Your Email</input></br>
-               <input class="field"type="Message"></br>Enter your message here</input></br>
-               <button class="button"type="button">Send Message</button>
+
+             <form id="ContactFormID"action="contactForm.php"method="POST">
+
+               <label for="Name">Name</label>
+                 <input type="text"id="NameID"name="Name"autocomplete="on"></input></br>
+
+               <label for="Email">Email</label>
+                 <input type="email"id="EmailID"name="Email"autocomplete="on"></input></br>
+
+               <label for="Message">Your message</label>
+                 <input id="MessageID"name="Message"autocomplete="on"></input></br>
+
+               <button class="button" type="input">Send Message</button>
+
              </form>
            </div>
 

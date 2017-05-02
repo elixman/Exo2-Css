@@ -37,8 +37,10 @@ li {
   font-family: 'Roboto Slab', serif;
 
 }
+h2 {
+  margin-left: 40%;
+}
 h3 {
-  margin-top: 35px;
   margin-left: 29%;
   color: white;
   font-family: 'HelveticaNeue';
